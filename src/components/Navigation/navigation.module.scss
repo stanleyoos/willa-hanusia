@@ -1,3 +1,32 @@
+.navigationContainer {
+  background: rgb(58, 158, 15);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 158, 15, 1) 1%,
+    rgba(41, 121, 8, 1) 91%
+  );
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      color: white;
+      font-size: 40px;
+      margin-right: 30px;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        color: wheat;
+      }
+    }
+  }
+}
 .navigationTitle {
   font-size: 30px;
 }
