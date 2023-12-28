@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints.scss";
+
 .navigationContainer {
   background: rgb(58, 158, 15);
   background: linear-gradient(
@@ -9,24 +11,50 @@
   border-radius: 0 0 10px 10px;
   display: flex;
   justify-content: space-between;
+  color: white;
+}
 
-  ul {
-    display: flex;
-    align-items: center;
+.navigationList {
+  display: flex;
+  align-items: center;
 
-    li {
-      color: white;
-      font-size: 40px;
-      margin-right: 30px;
-      cursor: pointer;
-      transition: all 0.4s ease-in-out;
+  li {
+    font-size: 40px;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
 
-      &:hover {
-        color: wheat;
-      }
+    &:hover {
+      color: wheat;
     }
   }
 }
-.navigationTitle {
-  font-size: 30px;
+
+.navigationHamburger {
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+
+  svg {
+    margin-right: 30px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: $large) {
+  .navigationList {
+    display: none;
+  }
+}
+
+@media (min-width: $large) {
+  .navigationHamburger {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
 }
