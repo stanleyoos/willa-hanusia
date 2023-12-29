@@ -6,7 +6,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className="flex items-center">
+      {/* <div className="flex items-center">
         <Link target="_blank" href="https://www.facebook.com/willa.hanusia">
           <FaFacebookSquare className="mr-6" />
         </Link>
@@ -16,7 +16,7 @@ const Footer = () => {
         >
           <Image src="/dzieciochatki.jpg" width={40} height={40} />
         </Link>
-      </div>
+      </div> */}
       <p className="font-sans text-sm text-center">
         Copyright © 2023 WILLA HANUSIA. Wszystkie prawa zastrzeżone.
       </p>

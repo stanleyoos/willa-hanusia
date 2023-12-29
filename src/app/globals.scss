@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @import "../styles/colors.scss";
+@import "../styles/breakpoints.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   background-color: $main-color;
