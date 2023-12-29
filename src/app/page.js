@@ -1,7 +1,9 @@
+import Homepage from "@/components/Homepage/Homepage";
+
 export default function Home() {
   return (
-    <main className="flex justify-center ">
-      <h1 className="text-3xl my-12"> Willa Hanusia</h1>
+    <main className="flex justify-center flex-col items-center">
+      <Homepage />
     </main>
   );
 }

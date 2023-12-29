@@ -1,0 +1,7 @@
+.headerImg {
+  transition: 0.5s all ease-in-out;
+  &:hover {
+    scale: 1.05;
+    cursor: pointer;
+  }
+}
