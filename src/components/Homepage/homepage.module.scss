@@ -1,0 +1,8 @@
+@import "../../styles/breakpoints.scss";
+
+@media (max-width: $medium) {
+  .tilesContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

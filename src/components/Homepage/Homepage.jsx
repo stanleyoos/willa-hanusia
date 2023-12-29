@@ -7,7 +7,7 @@ const Homepage = () => {
   return (
     <>
       <HomepageHeader />
-      <div className="flex h-100 mt-10 mb-40">
+      <div className={`${styles.tilesContainer} flex h-100 mt-10 mb-40`}>
         {atrakcje.map((item, index) => (
           <HomepageTile key={index} item={item} />
         ))}
