@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const Navigation = () => {
   const [showHamburger, setShowHamburger] = useState(false);
-  console.log(showHamburger);
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -35,7 +35,7 @@ const Navigation = () => {
         </li>
       </ul>
       <div className={styles.navigationHamburger}>
-        <div
+        {/* <div
           className={` ${showHamburger ? "mobileNavigationList" : "hidden"}`}
         >
           <ul>
@@ -52,7 +52,7 @@ const Navigation = () => {
               <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
         <GiHamburgerMenu onClick={() => setShowHamburger(!showHamburger)} />
       </div>
     </motion.div>

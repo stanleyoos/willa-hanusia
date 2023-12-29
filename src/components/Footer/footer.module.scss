@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints.scss";
+
 .footer {
   font-size: 30px;
   position: absolute;
@@ -22,12 +24,25 @@
 
   svg {
     color: rgb(52, 93, 175);
-    font-size: 60px;
+    font-size: 50px;
     //padding-top: 10px;
   }
 
   p {
     color: white;
     padding: 10px;
+  }
+}
+
+@media (max-width: $large) {
+  .footer {
+    svg {
+      font-size: 40px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
 }

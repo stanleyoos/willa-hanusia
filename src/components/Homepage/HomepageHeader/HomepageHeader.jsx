@@ -4,7 +4,7 @@ import styles from "./homepageHeader.module.scss";
 
 const HomepageHeader = () => {
   return (
-    <div className="my-8">
+    <div className="my-8 mx-2">
       <Link href="/oferta">
         <Image
           className={styles.headerImg}

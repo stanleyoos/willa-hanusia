@@ -14,7 +14,7 @@ const Footer = () => {
           target="_blank"
           href="https://www.dzieciochatki.pl/miejsce-przyjazne-dzieciom/willa-hanusia"
         >
-          <Image src="/dzieciochatki.jpg" width={50} height={50} />
+          <Image src="/dzieciochatki.jpg" width={40} height={40} />
         </Link>
       </div>
       <p className="font-sans text-sm text-center">

@@ -1,7 +1,11 @@
-.headerImg {
-  transition: 0.5s all ease-in-out;
-  &:hover {
-    scale: 1.05;
-    cursor: pointer;
+@import "../../../styles/breakpoints.scss";
+
+@media (min-width: $large) {
+  .headerImg {
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      scale: 1.02;
+      cursor: pointer;
+    }
   }
 }
