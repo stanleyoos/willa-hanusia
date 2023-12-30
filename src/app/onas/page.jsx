@@ -28,20 +28,12 @@ const ONasPage = () => {
           allowfullscreen
         ></iframe>
       </div>
-      <h1 className="text-3xl mb-5">
+      <h1 className="text-3xl text-center px-3 mb-5">
         Zapraszamy do zapoznania się z naszą ofertą
       </h1>
       <Button name="Oferta" href="/oferta" />
       <div className="mb-40"></div>
     </HOComponent>
-    // <motion.div
-    //   initial={{ opacity: 0, scale: 0.5 }}
-    //   animate={{ opacity: 1, scale: 1 }}
-    //   transition={{ duration: 1 }}
-    //   className="flex flex-col items-center justify-center"
-    // >
-
-    // </motion.div>
   );
 };
 
