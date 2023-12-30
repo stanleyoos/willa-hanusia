@@ -1,17 +1,10 @@
-"use client";
-
 import Button from "@/components/common/Button/Button";
 import styles from "./onas.module.scss";
-import { motion } from "framer-motion";
+import HOComponent from "@/components/Animation/HOComponent";
 
 const ONasPage = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
-      className="flex flex-col items-center justify-center"
-    >
+    <HOComponent className="flex flex-col items-center justify-center">
       <h1 className="text-5xl my-12">O nas</h1>
       <div className={styles.divContainer}>
         <div>
@@ -40,7 +33,15 @@ const ONasPage = () => {
       </h1>
       <Button name="Oferta" href="/oferta" />
       <div className="mb-40"></div>
-    </motion.div>
+    </HOComponent>
+    // <motion.div
+    //   initial={{ opacity: 0, scale: 0.5 }}
+    //   animate={{ opacity: 1, scale: 1 }}
+    //   transition={{ duration: 1 }}
+    //   className="flex flex-col items-center justify-center"
+    // >
+
+    // </motion.div>
   );
 };
 

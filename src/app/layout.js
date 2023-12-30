@@ -8,7 +8,7 @@ const lobster = Lobster({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Willa Hanusia",
-  description: "",
+  description: "noclegi Rabka-Zdrój wypoczynek lato ferie",
 };
 
 export default function RootLayout({ children }) {
