@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HomepageTile = ({ item }) => {
   return (
-    <div className="mr-5">
+    <div className="mx-2">
       <Image
         src={item.img}
         width={300}

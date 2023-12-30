@@ -30,18 +30,18 @@
   }
 }
 
-.navigationHamburger {
-  display: flex;
-  align-items: center;
-  font-size: 48px;
+// .navigationHamburger {
+//   display: flex;
+//   align-items: center;
+//   font-size: 48px;
 
-  svg {
-    margin-right: 30px;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
+//   svg {
+//     margin-right: 30px;
+//     &:hover {
+//       cursor: pointer;
+//     }
+//   }
+// }
 
 @media (max-width: $large) {
   .navigationList {
