@@ -1,23 +1,55 @@
+@import "../../styles/breakpoints.scss";
+
 .additionalInformation {
+  width: 100%;
+  margin: 15px 10px;
+  margin-bottom: 80px;
   h1 {
     font-size: 30px;
   }
   p {
     font-size: 20px;
+    text-align: center;
   }
 }
 
 .informations {
+  font-size: 22px;
   display: flex;
+  text-align: center;
   justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin: 50px 10px;
+  div {
+    flex: 1;
+  }
+  svg {
+    margin: 20px auto;
+    font-size: 40px;
+  }
 }
 
 .divContainer {
+  width: 80%;
   margin-bottom: 80px;
   iframe {
-    margin: 30px 10px;
+    width: 90%;
+    margin: 30px auto;
     border-radius: 10px;
+    box-shadow: 10px 15px 15px rgb(82, 82, 82);
+  }
+}
+
+@media (max-width: $large) {
+  .divContainer {
+    width: 100%;
+  }
+  .informations {
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      margin-bottom: 30px;
+      text-align: center;
+    }
   }
 }

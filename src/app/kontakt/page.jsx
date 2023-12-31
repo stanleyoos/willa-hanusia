@@ -1,31 +1,33 @@
 import HOComponent from "@/components/Animation/HOComponent";
 import styles from "./kontakt.module.scss";
+import { FaPhoneAlt, FaHome } from "react-icons/fa";
+import { BsBank2 } from "react-icons/bs";
 
 const KontaktPage = () => {
   return (
     <HOComponent className="flex flex-col items-center justify-center">
-      <h1 className="text-7xl my-12 mt-20 ">Kontakt</h1>
+      <h1 className="text-7xl mt-20">Kontakt</h1>
       <div className={styles.divContainer}>
-        <div className={styles.additionalInformation}>
-          <h1>Dodatkowe informacje</h1>
-          <p>
-            Doba hotelowa rozpoczyna się o godzinie 14:00 a kończy o godz. 11:00
-          </p>
-          <p>Na zapytania mailowe odpowiadamy do 24 godzin.</p>
-        </div>
         <div className={styles.informations}>
           <div>
+            <FaHome />
             <h1>Adres</h1>
             <p>ul. Bystra 18</p>
           </div>
           <div>
+            <FaPhoneAlt />
             <h1>Kontakt</h1>
             <p>18 26 77 547</p>
           </div>
           <div>
+            <BsBank2 />
             <h1>Numer konta</h1>
             <p>55 8815 0002 0000 0008 4781 0001</p>
           </div>
+        </div>
+        <div className={styles.additionalInformation}>
+          <p>Doba hotelowa: od 14:00 do 11:00 dnia następnego</p>
+          <p>Na zapytania mailowe odpowiadamy do 24 godzin</p>
         </div>
         <div>
           <iframe
