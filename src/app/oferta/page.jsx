@@ -19,6 +19,9 @@ const OfertaPage = () => {
           <Button name="Czytaj więcej" href="/oferta/grupowa" />
         </div>
       </div>
+      <div className="mb-20">
+        <h1 className="text-5xl">Lista atrakcji</h1>
+      </div>
     </HOComponent>
   );
 };
