@@ -3,6 +3,7 @@ import "./globals.scss";
 import Navigation from "@/components/Navigation/Navigation";
 import Footer from "@/components/Footer/Footer";
 import Container from "@/components/Container/Container";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const lobster = Lobster({ weight: "400", subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <Container>
           <Navigation />
           {children}
+          <SpeedInsights />
           <Footer />
         </Container>
       </body>
