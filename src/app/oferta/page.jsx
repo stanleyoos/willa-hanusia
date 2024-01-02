@@ -6,7 +6,7 @@ import Button from "@/components/common/Button/Button";
 const OfertaPage = () => {
   return (
     <HOComponent className="flex flex-col items-center justify-center ">
-      <h1 className="text-5xl my-12">Oferta</h1>
+      <h1 className="text-7xl my-12">Oferta</h1>
       <div className={`${styles.divContainer}`}>
         <div>
           <Image src="/ofertaRodzinna.jpeg" width={400} height={100} />

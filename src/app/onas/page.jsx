@@ -5,7 +5,7 @@ import HOComponent from "@/components/Animation/HOComponent";
 const ONasPage = () => {
   return (
     <HOComponent className="flex flex-col items-center justify-center">
-      <h1 className="text-5xl my-12">O nas</h1>
+      <h1 className="text-7xl my-12">O nas</h1>
       <div className={styles.divContainer}>
         <div>
           <ul className="mb-5">
