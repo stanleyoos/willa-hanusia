@@ -7,7 +7,7 @@ const OfertaGrupowaPage = async () => {
     <>
       <h1 className="text-center text-3xl mt-20">Oferta Grupowa</h1>
       <h1 className="text-center text-3xl mt-20">
-        Cena za osobę dorosłą : {ceny[0].wartosc}{" "}
+        Cena za osobę dorosłą : {ceny[0].wartosc}
       </h1>
     </>
   );
