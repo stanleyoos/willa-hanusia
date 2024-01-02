@@ -1,4 +1,13 @@
+@import "../../styles/breakpoints.scss";
+
 .logo img {
   margin: 20px;
   width: 200px;
+}
+
+@media (max-width: $large) {
+  .logo img {
+    margin: 20px;
+    width: 150px;
+  }
 }

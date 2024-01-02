@@ -23,9 +23,8 @@ const ONasPage = () => {
           height="415"
           src="https://www.youtube.com/embed/v3FHEiDZhzI?si=MSS0QnvJtWxzCMge"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
       <h1 className="text-3xl text-center px-3 mb-5">
