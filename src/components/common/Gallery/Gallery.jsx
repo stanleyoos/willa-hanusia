@@ -8,8 +8,9 @@ const Gallery = ({ photos }) => {
   console.log(photos);
   return (
     <div className={styles.galleryContainer}>
-      {photos.map((photo) => (
+      {photos.map((photo, index) => (
         <Image
+          key={index}
           src={photo}
           width={400}
           height={200}
