@@ -27,10 +27,10 @@ const ONasPage = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <h1 className="text-3xl text-center px-3 mb-5">
+      <h1 className="text-3xl text-center px-3 mb-10">
         Zapraszamy do zapoznania się z naszą ofertą
       </h1>
-      <Button name="Oferta" href="/oferta" />
+      <Button name="Sprawdź ofertę" href="/oferta" />
       <div className="mb-40"></div>
     </HOComponent>
   );
