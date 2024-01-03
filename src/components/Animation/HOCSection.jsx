@@ -5,7 +5,7 @@ import styles from "./section.module.scss";
 
 const HOCSection = ({ children, side }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   let direction = side == "left" ? "translateX(-900px)" : "translateX(900px)";
   return (
     <section className={styles.sectionContainer} ref={ref}>
