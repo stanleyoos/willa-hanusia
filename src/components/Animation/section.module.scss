@@ -1,0 +1,13 @@
+.sectionContainer {
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  span {
+    display: block;
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
