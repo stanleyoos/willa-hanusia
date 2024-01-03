@@ -14,11 +14,17 @@ const KontaktPage = () => {
             <FaHome />
             <h1>Adres</h1>
             <p>ul. Bystra 18</p>
+            <p>34-700 Rabka-Zdrój</p>
           </div>
           <div>
             <FaPhoneAlt />
             <h1>Kontakt</h1>
-            <a href="tel:18 26 77 547">18 26 77 547</a>
+            <p className="my-3">
+              <a href="tel:18 26 77 547">18 26 77 547</a>
+            </p>
+            <p>
+              <a href="tel:604 525 964">604 525 964</a>
+            </p>
           </div>
           <div>
             <BsBank2 />
@@ -27,12 +33,12 @@ const KontaktPage = () => {
           </div>
         </div>
         <a
-          href="mailto:willa.hanusia@gmail.com"
+          href="mailto:kontakt@hanusia-rabka.pl"
           className={styles.mailInformation}
         >
           <IoIosMail />
           <h1>Mail</h1>
-          <p>willa.hanusia@gmail.com</p>
+          <p>kontakt@hanusia-rabka.pl</p>
         </a>
         <div className={styles.additionalInformation}>
           <p>Doba hotelowa: od 14:00 do 11:00 dnia następnego</p>
