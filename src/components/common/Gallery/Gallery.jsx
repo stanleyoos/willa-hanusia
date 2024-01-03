@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./gallery.module.scss";
 
 const Gallery = ({ photos, name }) => {
-  console.log(photos);
   return (
     <>
       <h1 className={styles.title}>{name}</h1>
