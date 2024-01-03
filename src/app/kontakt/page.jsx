@@ -2,6 +2,7 @@ import HOComponent from "@/components/Animation/HOComponent";
 import styles from "./kontakt.module.scss";
 import { FaPhoneAlt, FaHome } from "react-icons/fa";
 import { BsBank2 } from "react-icons/bs";
+import { IoIosMail } from "react-icons/io";
 
 const KontaktPage = () => {
   return (
@@ -17,7 +18,7 @@ const KontaktPage = () => {
           <div>
             <FaPhoneAlt />
             <h1>Kontakt</h1>
-            <p>18 26 77 547</p>
+            <a href="tel:18 26 77 547">18 26 77 547</a>
           </div>
           <div>
             <BsBank2 />
@@ -25,6 +26,14 @@ const KontaktPage = () => {
             <p>55 8815 0002 0000 0008 4781 0001</p>
           </div>
         </div>
+        <a
+          href="mailto:willa.hanusia@gmail.com"
+          className={styles.mailInformation}
+        >
+          <IoIosMail />
+          <h1>Mail</h1>
+          <p>willa.hanusia@gmail.com</p>
+        </a>
         <div className={styles.additionalInformation}>
           <p>Doba hotelowa: od 14:00 do 11:00 dnia następnego</p>
           <p>Na zapytania mailowe odpowiadamy do 24 godzin</p>
@@ -35,7 +44,7 @@ const KontaktPage = () => {
             width="600"
             height="450"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

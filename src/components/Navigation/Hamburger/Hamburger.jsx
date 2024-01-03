@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "./hamburger.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { motion, sync, useCycle } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 
