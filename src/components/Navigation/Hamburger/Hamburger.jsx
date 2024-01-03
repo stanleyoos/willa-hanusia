@@ -1,13 +1,19 @@
 import { useState } from "react";
 import styles from "./hamburger.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { motion, sync, useCycle } from "framer-motion";
+import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 
 const Hamburger = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className={styles.divContainer}>
-      <GiHamburgerMenu onClick={() => setShowMenu(!showMenu)} />
+      {showMenu ? (
+        <IoMdClose onClick={() => setShowMenu(false)} />
+      ) : (
+        <GiHamburgerMenu onClick={() => setShowMenu(true)} />
+      )}
       <div className={`${styles.sidebar} ${showMenu ? "" : `${styles.hide}`}`}>
         <ul>
           <li>

@@ -1,12 +1,5 @@
 @import "../../styles/breakpoints.scss";
 
-@media (max-width: $medium) {
-  .tilesContainer {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
-
 .tile {
   div {
     width: 300px;
@@ -23,18 +16,18 @@
     border: 1px solid black;
   }
 }
-
-@media (max-width: $large) {
-  .tile {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 @media (min-width: $large) {
   .tile:nth-child(2) {
     .tileImg {
       order: 10;
     }
+  }
+}
+
+@media (max-width: $large) {
+  .tile {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
   }
 }
