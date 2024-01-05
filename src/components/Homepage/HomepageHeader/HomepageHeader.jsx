@@ -6,7 +6,7 @@ import HOComponent from "@/components/Animation/HOComponent";
 const HomepageHeader = async () => {
   return (
     <HOComponent className="my-8 mx-2">
-      <Link href="/oferta">
+      <Link href="#offert">
         <Image
           className={styles.headerImg}
           src={"/homepageHeader.jpeg"}

@@ -7,7 +7,7 @@ import styles from "./section.module.scss";
 const SectionComponent = ({ children, idName, side }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
-  let direction = side == "left" ? "translateX(-900px)" : "translateX(900px)";
+  let direction = side == "left" ? "translateX(-100px)" : "translateX(100px)";
   return (
     <section id={idName} className={styles.sectionDiv} ref={ref}>
       <span

@@ -1,0 +1,41 @@
+@import "../../styles/breakpoints.scss";
+
+.divContainer {
+  display: flex;
+  margin: 20px 50px;
+  margin-bottom: 90px;
+  gap: 30px;
+  align-items: center;
+
+  div {
+    flex: 1;
+    font-size: 32px;
+    border: 1px solid rgb(96, 96, 96);
+    box-shadow: 10px 15px 15px rgb(82, 82, 82);
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  iframe {
+    flex: 1;
+    box-shadow: 10px 15px 15px rgb(82, 82, 82);
+    border-radius: 10px;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: $large) {
+  .divContainer {
+    flex-direction: column;
+    width: 100%;
+
+    div {
+      margin: 0 10px;
+    }
+
+    iframe {
+      padding: 0 10px;
+      width: 100%;
+    }
+  }
+}

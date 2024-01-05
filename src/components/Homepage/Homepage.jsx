@@ -4,8 +4,18 @@ import Image from "next/image";
 import Button from "../common/Button/Button";
 import HOCSection from "../Animation/HOCSection";
 import SectionComponent from "../common/Section/SectionComponent";
+import Gallery from "../common/Gallery/Gallery";
+import AboutUs from "../AboutUs/AboutUs";
+import Contact from "../Contact/Contact";
+import Offert from "../Offert/Offert";
 
 const Homepage = () => {
+  const atrakcje = [
+    "/atrakcje/01.jpeg",
+    "/atrakcje/02.jpeg",
+    "/atrakcje/03.jpeg",
+    "/atrakcje/04.jpeg",
+  ];
   return (
     <>
       <HomepageHeader />
@@ -68,16 +78,16 @@ const Homepage = () => {
         </HOCSection>
       </div>
       <SectionComponent idName="about" side="left">
-        <h1>About us</h1>
+        <AboutUs />
       </SectionComponent>
       <SectionComponent idName="offert">
-        <h1>Offert</h1>
+        <Offert />
       </SectionComponent>
       <SectionComponent idName="gallery" side="left">
-        <h1>Gallery</h1>
+        <Gallery photos={atrakcje} name="Atrakcje" />
       </SectionComponent>
       <SectionComponent idName="contact">
-        <h1>Contact</h1>
+        <Contact />
       </SectionComponent>
     </>
   );
