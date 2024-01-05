@@ -7,7 +7,7 @@ import { IoIosMail } from "react-icons/io";
 const Contact = () => {
   return (
     <>
-      <h1 className="text-5xl mt-20">Kontakt</h1>
+      <h1 className="text-5xl text-center">Kontakt</h1>
       <div className={styles.divContainer}>
         <div className={styles.informations}>
           <div>

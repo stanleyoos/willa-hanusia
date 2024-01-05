@@ -1,7 +1,8 @@
 .sectionDiv {
-  background: rgb(201, 159, 82);
+  //background: rgb(201, 159, 82);
+  border-bottom: 10px solid rgb(201, 159, 82);
   height: 1000px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -16,6 +16,12 @@ const Homepage = () => {
     "/atrakcje/03.jpeg",
     "/atrakcje/04.jpeg",
   ];
+  const pokoje = [
+    "/pokoje/01.jpg",
+    "/pokoje/02.jpg",
+    "/pokoje/03.jpg",
+    "/pokoje/04.jpg",
+  ];
   return (
     <>
       <HomepageHeader />
@@ -23,7 +29,7 @@ const Homepage = () => {
         className={`${styles.tilesContainer} flex flex-col w-100 h-100 mt-30 mb-10 mt-10`}
       >
         <HOCSection side={"left"}>
-          <div className={`${styles.tile} mx-2 mb-20 flex`}>
+          <div className={`${styles.tile} mb-20 flex`}>
             <Image
               src="/atrakcje.jpeg"
               width={200}
@@ -38,7 +44,7 @@ const Homepage = () => {
           </div>
         </HOCSection>
         <HOCSection side={"right"}>
-          <div className={`${styles.tile} mx-2 mb-20 flex`}>
+          <div className={`${styles.tile} mb-20 flex`}>
             <div className="flex flex-col items-center mx-10">
               <h1 className="text-center mt-2 mb-6 text-4xl">Obiekt</h1>
               <ul className="mb-6">
@@ -58,7 +64,7 @@ const Homepage = () => {
           </div>
         </HOCSection>
         <HOCSection side={"left"}>
-          <div className={`${styles.tile} mx-2 mb-20 flex`}>
+          <div className={`${styles.tile} mb-20 flex`}>
             <Image
               src="/jadalnia.jpeg"
               width={200}
@@ -85,6 +91,7 @@ const Homepage = () => {
       </SectionComponent>
       <SectionComponent idName="gallery" side="left">
         <Gallery photos={atrakcje} name="Atrakcje" />
+        <Gallery photos={pokoje} name="Pokoje" />
       </SectionComponent>
       <SectionComponent idName="contact">
         <Contact />

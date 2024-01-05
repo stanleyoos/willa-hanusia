@@ -5,7 +5,7 @@ import HOComponent from "@/components/Animation/HOComponent";
 const AboutUs = () => {
   return (
     <>
-      <h1 className="text-7xl my-12">O nas</h1>
+      <h1 className="text-7xl my-12 text-center">O nas</h1>
       <div className={styles.divContainer}>
         <div>
           <ul className="mb-5">
@@ -30,7 +30,9 @@ const AboutUs = () => {
       <h1 className="text-3xl text-center px-3 mb-10">
         Zapraszamy do zapoznania się z naszą ofertą
       </h1>
-      <Button name="Sprawdź ofertę" href="/oferta" />
+      <div className="flex justify-center">
+        <Button name="Sprawdź ofertę" href="/oferta" />
+      </div>
       <div className="mb-40"></div>
     </>
   );
