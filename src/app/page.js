@@ -3,7 +3,7 @@ import "./globals.scss";
 
 export default function Home() {
   return (
-    <main className="flex justify-center flex-col items-center">
+    <main>
       <Homepage />
     </main>
   );

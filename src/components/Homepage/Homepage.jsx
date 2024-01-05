@@ -25,10 +25,8 @@ const Homepage = () => {
   return (
     <>
       <HomepageHeader />
-      <div
-        className={`${styles.tilesContainer} flex flex-col w-100 h-100 mt-30 mb-10 mt-10`}
-      >
-        <HOCSection side={"left"}>
+      <div className={`${styles.tilesContainer} flex flex-col mt-30 mb-10`}>
+        <HOCSection>
           <div className={`${styles.tile} mb-20 flex`}>
             <Image
               src="/atrakcje.jpeg"
@@ -43,7 +41,7 @@ const Homepage = () => {
             </div>
           </div>
         </HOCSection>
-        <HOCSection side={"right"}>
+        <HOCSection>
           <div className={`${styles.tile} mb-20 flex`}>
             <div className="flex flex-col items-center mx-10">
               <h1 className="text-center mt-2 mb-6 text-4xl">Obiekt</h1>
@@ -63,7 +61,7 @@ const Homepage = () => {
             />
           </div>
         </HOCSection>
-        <HOCSection side={"left"}>
+        <HOCSection>
           <div className={`${styles.tile} mb-20 flex`}>
             <Image
               src="/jadalnia.jpeg"

@@ -1,5 +1,9 @@
 @import "../../../styles/breakpoints.scss";
 
+.headerImg {
+  margin: 0 auto;
+}
+
 @media (min-width: $large) {
   .headerImg {
     transition: 0.3s all ease-in-out;
