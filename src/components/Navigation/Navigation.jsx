@@ -19,16 +19,16 @@ const Navigation = () => {
       </Link>
       <ul className={styles.navigationList}>
         <li>
-          <Link href="/onas">O nas</Link>
+          <Link href="#about">O nas</Link>
         </li>
         <li>
-          <Link href="/galeria">Galeria</Link>
+          <Link href="#gallery">Galeria</Link>
         </li>
         <li>
-          <Link href="/oferta">Oferta</Link>
+          <Link href="#offert">Oferta</Link>
         </li>
         <li>
-          <Link href="/kontakt">Kontakt</Link>
+          <Link href="#contact">Kontakt</Link>
         </li>
       </ul>
       <div className={styles.navigationHamburger}>

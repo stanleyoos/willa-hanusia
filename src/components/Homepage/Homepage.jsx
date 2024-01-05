@@ -3,6 +3,7 @@ import HomepageHeader from "./HomepageHeader/HomepageHeader";
 import Image from "next/image";
 import Button from "../common/Button/Button";
 import HOCSection from "../Animation/HOCSection";
+import SectionComponent from "../common/Section/SectionComponent";
 
 const Homepage = () => {
   return (
@@ -66,6 +67,18 @@ const Homepage = () => {
           </div>
         </HOCSection>
       </div>
+      <SectionComponent idName="about" side="left">
+        <h1>About us</h1>
+      </SectionComponent>
+      <SectionComponent idName="offert">
+        <h1>Offert</h1>
+      </SectionComponent>
+      <SectionComponent idName="gallery" side="left">
+        <h1>Gallery</h1>
+      </SectionComponent>
+      <SectionComponent idName="contact">
+        <h1>Contact</h1>
+      </SectionComponent>
     </>
   );
 };

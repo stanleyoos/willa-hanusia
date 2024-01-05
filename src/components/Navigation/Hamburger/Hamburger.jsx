@@ -16,22 +16,22 @@ const Hamburger = () => {
       <div className={`${styles.sidebar} ${showMenu ? "" : `${styles.hide}`}`}>
         <ul>
           <li>
-            <Link onClick={() => setShowMenu(false)} href="/onas">
+            <Link onClick={() => setShowMenu(false)} href="#about">
               O nas
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowMenu(false)} href="/galeria">
+            <Link onClick={() => setShowMenu(false)} href="#gallery">
               Galeria
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowMenu(false)} href="/oferta">
+            <Link onClick={() => setShowMenu(false)} href="#offert">
               Oferta
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowMenu(false)} href="/kontakt">
+            <Link onClick={() => setShowMenu(false)} href="#contact">
               Kontakt
             </Link>
           </li>
