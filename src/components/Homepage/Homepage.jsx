@@ -8,6 +8,7 @@ import Gallery from "../common/Gallery/Gallery";
 import AboutUs from "../AboutUs/AboutUs";
 import Contact from "../Contact/Contact";
 import Offert from "../Offert/Offert";
+import Atrakcje from "../Atrakcje/Atrakcje";
 import HomePageWidgets from "./HomePageWidgets/HomePageWidgets";
 
 const Homepage = () => {
@@ -35,6 +36,9 @@ const Homepage = () => {
       </SectionComponent>
       <SectionComponent idName="offert">
         <Offert />
+      </SectionComponent>
+      <SectionComponent idName="atrakcje">
+        <Atrakcje />
       </SectionComponent>
       <SectionComponent idName="gallery">
         <Gallery photos={atrakcje} name="Atrakcje" />

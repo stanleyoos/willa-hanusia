@@ -2,15 +2,17 @@
 
 .headerImg {
   width: 90%;
+  border-radius: 10px;
   margin: 0 auto;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    scale: 1.02;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: $large) {
   .headerImg {
-    transition: 0.3s all ease-in-out;
-    &:hover {
-      scale: 1.02;
-      cursor: pointer;
-    }
+    width: 60%;
   }
 }
