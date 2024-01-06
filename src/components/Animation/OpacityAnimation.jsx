@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const HOComponent = ({ children, className }) => {
+const OpacityAnimation = ({ children, className }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -15,4 +15,4 @@ const HOComponent = ({ children, className }) => {
   );
 };
 
-export default HOComponent;
+export default OpacityAnimation;

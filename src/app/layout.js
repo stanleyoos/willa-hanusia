@@ -1,5 +1,4 @@
 import { Lobster, Lato } from "next/font/google";
-import "./globals.scss";
 import Navigation from "@/components/Navigation/Navigation";
 import Footer from "@/components/Footer/Footer";
 import Container from "@/components/Container/Container";

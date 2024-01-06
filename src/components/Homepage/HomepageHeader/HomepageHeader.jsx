@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./homepageHeader.module.scss";
-import HOComponent from "@/components/Animation/HOComponent";
+import HOComponent from "@/components/Animation/OpacityAnimation";
 
 const HomepageHeader = async () => {
   return (

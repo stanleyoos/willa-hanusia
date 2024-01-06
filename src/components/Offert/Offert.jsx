@@ -1,4 +1,4 @@
-import HOComponent from "@/components/Animation/HOComponent";
+import HOComponent from "@/components/Animation/OpacityAnimation";
 import Image from "next/image";
 import styles from "./oferta.module.scss";
 import Button from "@/components/common/Button/Button";
@@ -6,7 +6,7 @@ import Button from "@/components/common/Button/Button";
 const Offert = () => {
   return (
     <div className={styles.divContainer}>
-      <h1 className="text-5xl my-2 text-center">Oferta</h1>
+      <h1 className="text-7xl my-10 text-center">Oferta</h1>
       <div>
         <div>
           <Image src="/ofertaRodzinna.jpeg" width={400} height={100} />
@@ -14,7 +14,7 @@ const Offert = () => {
           <Button name="Czytaj więcej" href="/oferta/rodzinna" />
         </div>
         <div>
-          <Image src="/ofertaGrupowa.jpeg" width={300} height={100} />
+          <Image src="/ofertaGrupowa.jpeg" width={320} height={100} />
           <h1>Grupowa</h1>
           <Button name="Czytaj więcej" href="/oferta/grupowa" />
         </div>

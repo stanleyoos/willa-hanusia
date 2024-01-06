@@ -1,4 +1,4 @@
-import HOComponent from "@/components/Animation/HOComponent";
+import HOComponent from "@/components/Animation/OpacityAnimation";
 import Image from "next/image";
 import styles from "./oferta.module.scss";
 import Button from "@/components/common/Button/Button";

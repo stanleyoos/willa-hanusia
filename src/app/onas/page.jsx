@@ -1,6 +1,6 @@
 import Button from "@/components/common/Button/Button";
 import styles from "./onas.module.scss";
-import HOComponent from "@/components/Animation/HOComponent";
+import HOComponent from "@/components/Animation/OpacityAnimation";
 
 const ONasPage = () => {
   return (

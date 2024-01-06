@@ -1,4 +1,4 @@
-import HOComponent from "@/components/Animation/HOComponent";
+import HOComponent from "@/components/Animation/OpacityAnimation";
 import styles from "./kontakt.module.scss";
 import { FaPhoneAlt, FaHome } from "react-icons/fa";
 import { BsBank2 } from "react-icons/bs";
