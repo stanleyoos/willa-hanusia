@@ -1,42 +1,53 @@
 @import "../../styles/breakpoints.scss";
+@import "../../styles/colors.scss";
 
 .divContainer {
   display: flex;
-  //margin: 20px 10px;
+  justify-content: space-between;
+  width: 100%;
   margin-bottom: 90px;
-  gap: 50px;
+  gap: 250px;
   align-items: center;
 
-  div {
-    flex: 1;
+  .leftDiv {
+    flex: 2;
     font-size: 22px;
+    right: 100px;
+    width: 275px;
     border: 1px solid rgb(96, 96, 96);
     box-shadow: 10px 15px 15px rgb(82, 82, 82);
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px;
+    position: relative;
+    z-index: 4;
+
+    div {
+      width: 290px;
+      background: $main-color;
+      position: absolute;
+      z-index: 10;
+      left: 240px;
+      bottom: -30px;
+      font-size: 22px;
+      border: 1px solid rgb(96, 96, 96);
+      box-shadow: 10px 15px 15px rgb(82, 82, 82);
+      border-radius: 10px;
+      padding: 5px;
+    }
   }
 
   iframe {
     flex: 1;
+    width: 400px;
+    height: 200px;
     box-shadow: 10px 15px 15px rgb(82, 82, 82);
     border-radius: 10px;
-    // min-height: 300px;
-    // max-width: 350px;
   }
 }
 
-@media (max-width: $large) {
+@media (max-width: $xl) {
   .divContainer {
     flex-direction: column;
-    width: 100%;
-
-    div {
-      margin: 0 10px;
-    }
-
-    iframe {
-      padding: 0 10px;
-      width: 100%;
-    }
+    gap: 100px;
   }
 }
