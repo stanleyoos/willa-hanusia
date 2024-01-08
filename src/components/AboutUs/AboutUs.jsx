@@ -1,6 +1,5 @@
 import Button from "@/components/common/Button/Button";
 import styles from "./onas.module.scss";
-import HOComponent from "@/components/Animation/OpacityAnimation";
 
 const AboutUs = () => {
   return (
@@ -15,7 +14,6 @@ const AboutUs = () => {
             <li>- Cicha i spokojna okolica</li>
           </ul>
           <div>
-            {/* to elementy dzięki którym wypoczynek będzie naprawdę udany. */}
             Wszystko to znajdziecie Państwo w Willi Hanusia - najlepszym miejscu
             do wypoczynku z dziećmi.
           </div>
@@ -32,13 +30,13 @@ const AboutUs = () => {
           ></iframe>
         </div>
       </div>
-      <h1 className="text-3xl text-center px-3 mb-10">
+      <h1 className="text-3xl text-center px-3 mb-6">
         Zapraszamy do zapoznania się z naszą ofertą
       </h1>
       <div className="flex justify-center">
-        <Button name="Sprawdź ofertę" href="/oferta" />
+        <Button name="Sprawdź ofertę" href="#offert" />
       </div>
-      <div className="mb-40"></div>
+      <div className="mb-20"></div>
     </>
   );
 };

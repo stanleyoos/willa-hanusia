@@ -51,3 +51,20 @@
     gap: 100px;
   }
 }
+
+@media (max-width: $medium) {
+  .divContainer {
+    gap: 50px;
+
+    .leftDiv {
+      position: static;
+
+      div {
+        position: static;
+        border: none;
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
