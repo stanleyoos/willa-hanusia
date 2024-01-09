@@ -1,21 +1,27 @@
+@import "../../styles/breakpoints.scss";
+
 .divContainer {
   display: flex;
   //flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   margin-bottom: 80px;
 }
 
 .singleAttraction {
   font-style: normal;
   font-size: 22px;
-  margin: 10px 10px;
-  min-width: 390px;
-  max-width: 400px;
-  padding: 20px;
+  margin: 10px 20px;
+  width: 400px;
+  padding: 15px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid rgb(198, 198, 198);
   border-radius: 10px;
+}
+
+@media (max-width: $small) {
+  .singleAttraction {
+    width: 350px;
+  }
 }

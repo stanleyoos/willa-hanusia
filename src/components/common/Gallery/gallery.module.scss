@@ -1,24 +1,29 @@
 .galleryContainer {
-  // width: 100%;
-  height: 300px;
+  height: 250px;
   background: rgb(247, 213, 150);
   border-radius: 10px;
   opacity: 0.9;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 50px;
   display: flex;
   overflow-x: scroll;
-  gap: 20px;
+
   padding: 20px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .singlePhoto {
-  padding: 20px;
+  padding: 10px;
   flex: 1;
   flex-grow: 0;
   flex-shrink: 0;
-  margin-right: 10px;
 }
 
 .title {

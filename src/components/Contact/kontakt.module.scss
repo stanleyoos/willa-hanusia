@@ -1,14 +1,25 @@
 @import "../../styles/breakpoints.scss";
 
+.divContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  iframe {
+    width: 100%;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 10px 15px 15px rgb(82, 82, 82);
+  }
+}
+
 .additionalInformation {
   width: 100%;
   margin: 15px 0;
-  //margin-bottom: 80px;
-  h1 {
-    font-size: 20px;
-  }
+
   p {
-    font-size: 10px;
+    font-size: 22px;
     text-align: center;
   }
 }
@@ -18,49 +29,35 @@
   display: flex;
   text-align: center;
   justify-content: space-between;
-  margin: 50px 10px;
+  margin: 20px 10px;
   div {
     flex: 1;
   }
   svg {
     margin: 15px auto;
-    font-size: 20px;
+    font-size: 40px;
   }
   p {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
 .mailInformation {
   text-align: center;
   display: block;
-  margin-bottom: 100px;
-  font-size: 12px;
+  margin-bottom: 40px;
+  font-size: 22px;
 
   svg {
     margin: 20px auto;
-    font-size: 20px;
+    font-size: 44px;
   }
   p {
     font-size: 26px;
   }
 }
 
-.divContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin-bottom: 80px;
-  iframe {
-    width: 90%;
-    margin: 30px auto;
-    border-radius: 10px;
-    box-shadow: 10px 15px 15px rgb(82, 82, 82);
-  }
-}
-
-@media (max-width: $large) {
+@media (max-width: $medium) {
   .divContainer {
     width: 100%;
   }
@@ -71,6 +68,7 @@
     div {
       margin-bottom: 30px;
       text-align: center;
+      font-size: 38px;
     }
   }
 }
