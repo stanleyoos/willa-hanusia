@@ -1,4 +1,4 @@
-import HOCSection from "@/components/Animation/LeftAnimation";
+import LeftAnimation from "@/components/Animation/LeftAnimation";
 import styles from "./homepagewidgets.module.scss";
 import Image from "next/image";
 import Button from "@/components/common/Button/Button";
@@ -6,7 +6,7 @@ import Button from "@/components/common/Button/Button";
 const HomePageWidgets = () => {
   return (
     <div className={styles.tilesContainer}>
-      <HOCSection>
+      <LeftAnimation>
         <div className={styles.tile}>
           <Image
             src="/atrakcje.jpeg"
@@ -20,8 +20,8 @@ const HomePageWidgets = () => {
             <Button href="#atrakcje" name="Lista atrakcji" />
           </div>
         </div>
-      </HOCSection>
-      <HOCSection>
+      </LeftAnimation>
+      <LeftAnimation>
         <div className={styles.tile}>
           <div>
             <h1>Obiekt</h1>
@@ -40,8 +40,8 @@ const HomePageWidgets = () => {
             className={styles.tileImg}
           />
         </div>
-      </HOCSection>
-      <HOCSection>
+      </LeftAnimation>
+      <LeftAnimation>
         <div className={styles.tile}>
           <Image
             src="/jadalnia.jpeg"
@@ -58,7 +58,7 @@ const HomePageWidgets = () => {
             <Button href="#offert" name="Oferta" />
           </div>
         </div>
-      </HOCSection>
+      </LeftAnimation>
     </div>
   );
 };
