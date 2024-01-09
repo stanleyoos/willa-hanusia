@@ -7,13 +7,13 @@ const Offert = () => {
   return (
     <div className={styles.divContainer}>
       <h1 className="text-7xl my-10 text-center">Oferta</h1>
-      <div>
-        <div>
+      <div className={styles.offertWrapper}>
+        <div className={styles.singleOffert}>
           <Image src="/ofertaRodzinna.jpeg" width={400} height={100} />
           <h1>Rodzinna</h1>
           <Button name="Czytaj więcej" href="/oferta/rodzinna" />
         </div>
-        <div>
+        <div className={styles.singleOffert}>
           <Image src="/ofertaGrupowa.jpeg" width={320} height={100} />
           <h1>Grupowa</h1>
           <Button name="Czytaj więcej" href="/oferta/grupowa" />

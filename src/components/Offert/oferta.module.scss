@@ -3,12 +3,13 @@
 .divContainer {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  div {
+  margin-bottom: 100px;
+  .offertWrapper {
     display: flex;
     flex: 1;
+    gap: 40px;
 
-    div {
+    .singleOffert {
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -18,12 +19,17 @@
       margin: 5px 10px;
       border-radius: 10px;
       box-shadow: 10px 15px 15px rgb(82, 82, 82);
+      transition: 0.2s all ease-in-out;
 
       h1 {
         font-size: 42px;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 10px;
+      }
+
+      &:hover {
+        border: 1px solid white;
       }
     }
   }
@@ -37,10 +43,6 @@
   .divContainer {
     div {
       flex-direction: column;
-    }
-
-    h1 {
-      margin: 5px 0;
     }
   }
 }
